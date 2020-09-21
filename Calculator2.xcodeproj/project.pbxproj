@@ -13,6 +13,11 @@
 		061AED062513830600855EAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061AED052513830600855EAB /* Preview Assets.xcassets */; };
 		061AED112513830600855EAB /* Calculator2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AED102513830600855EAB /* Calculator2Tests.swift */; };
 		061AED1C2513830600855EAB /* Calculator2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AED1B2513830600855EAB /* Calculator2UITests.swift */; };
+		0673C0992513A801003899B2 /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0673C0982513A801003899B2 /* NumberButton.swift */; };
+		0673C0A12513AB27003899B2 /* calcData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0673C0A02513AB27003899B2 /* calcData.swift */; };
+		0673C0AC2513B5EC003899B2 /* BinarOperatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0673C0AB2513B5EC003899B2 /* BinarOperatorButton.swift */; };
+		0673C0B12513BF17003899B2 /* SpecialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0673C0B02513BF17003899B2 /* SpecialButton.swift */; };
+		0698D85525178B39003BC164 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0698D85425178B39003BC164 /* GameController.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		061AED172513830600855EAB /* Calculator2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Calculator2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		061AED1B2513830600855EAB /* Calculator2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator2UITests.swift; sourceTree = "<group>"; };
 		061AED1D2513830600855EAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0673C0982513A801003899B2 /* NumberButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
+		0673C0A02513AB27003899B2 /* calcData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calcData.swift; sourceTree = "<group>"; };
+		0673C0AB2513B5EC003899B2 /* BinarOperatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarOperatorButton.swift; sourceTree = "<group>"; };
+		0673C0B02513BF17003899B2 /* SpecialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialButton.swift; sourceTree = "<group>"; };
+		0698D85425178B39003BC164 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0698D85525178B39003BC164 /* GameController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +90,7 @@
 				061AED0F2513830600855EAB /* Calculator2Tests */,
 				061AED1A2513830600855EAB /* Calculator2UITests */,
 				061AECFC2513830400855EAB /* Products */,
+				0698D85325178B39003BC164 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +109,10 @@
 			children = (
 				061AECFE2513830400855EAB /* Calculator2App.swift */,
 				061AED002513830400855EAB /* ContentView.swift */,
+				0673C0972513A7E1003899B2 /* SubButtonView */,
 				061AED022513830600855EAB /* Assets.xcassets */,
 				061AED072513830600855EAB /* Info.plist */,
+				0673C0A02513AB27003899B2 /* calcData.swift */,
 				061AED042513830600855EAB /* Preview Content */,
 			);
 			path = Calculator2;
@@ -128,6 +142,24 @@
 				061AED1D2513830600855EAB /* Info.plist */,
 			);
 			path = Calculator2UITests;
+			sourceTree = "<group>";
+		};
+		0673C0972513A7E1003899B2 /* SubButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				0673C0B02513BF17003899B2 /* SpecialButton.swift */,
+				0673C0982513A801003899B2 /* NumberButton.swift */,
+				0673C0AB2513B5EC003899B2 /* BinarOperatorButton.swift */,
+			);
+			path = SubButtonView;
+			sourceTree = "<group>";
+		};
+		0698D85325178B39003BC164 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0698D85425178B39003BC164 /* GameController.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0673C0992513A801003899B2 /* NumberButton.swift in Sources */,
 				061AED012513830400855EAB /* ContentView.swift in Sources */,
+				0673C0AC2513B5EC003899B2 /* BinarOperatorButton.swift in Sources */,
+				0673C0B12513BF17003899B2 /* SpecialButton.swift in Sources */,
 				061AECFF2513830400855EAB /* Calculator2App.swift in Sources */,
+				0673C0A12513AB27003899B2 /* calcData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
